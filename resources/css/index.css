@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem;
+}
+
+#nav-list li{
+    display: inline-block;
+}
+
+.nav-link{
+    text-decoration: none;
+    color:black;
+    font-size: 1.5rem;
+    padding-left: 2rem;
+}
+
+#about-me{
+    width:50%;
+    margin: auto;
+}
+
+figure{
+    margin: 2rem;
+}
+
+figcaption{
+    text-align: center;
+}
+
+#profile-img{
+    height: auto;
+    float: left;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    min-width: 300px;
+    max-width: 300px;
+}
+
+#about-text{
+    margin: 2rem 2rem 2rem 1rem;
+}
+
+#about-text h2{
+    font-size:2rem;
+    margin-bottom: 1rem;
+}
+
+#about-text p{
+    line-height: 1.5;
+}
+
+#projects{
+    margin-top: 8rem;
+}
+
+#projects h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+#projects-div{
+    width:60%;
+    margin:2rem;
+    padding-top: 5rem;
+    display: flex;
+    margin: auto;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+
+.project-box{
+    border: 1px solid black;
+    width:40%;
+    margin-bottom: 2rem;
+}
+
+.project-box h3{
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.project-img{
+    width: 100%;
+    height: auto;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+    border-top: 1px solid black;
+    padding-top: 2rem;
+}
