@@ -20,16 +20,24 @@ header{
     text-decoration: none;
     color:black;
     font-size: 1.5rem;
-    padding-left: 2rem;
+    padding: 1rem;
+}
+
+.nav-link:hover{
+    background-color: lightgrey;
 }
 
 #about-me{
     width:50%;
-    margin: auto;
+    margin: 5rem auto 0 auto;
 }
 
 figure{
     margin: 2rem;
+}
+
+#profile-pic-div{
+    position: relative;
 }
 
 figcaption{
@@ -81,11 +89,13 @@ figcaption{
     border: 1px solid black;
     width:40%;
     margin-bottom: 2rem;
+    box-shadow: 5px -5px 5px black;
 }
 
 .project-box h3{
     text-align: center;
     padding: 0.5rem;
+    border-bottom: 1px solid black;
 }
 
 .project-img{
@@ -93,10 +103,85 @@ figcaption{
     height: auto;
 }
 
+/*.project-card{
+    background-color: transparent;
+    border: 1px solid black;
+    perspective: 1000px;
+}
+
+.project-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.project-card:hover .project-card-inner {
+    transform: rotateY(180deg);
+  }
+
+.project-card-front, .project-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.project-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.project-card-back {
+    background-color: yellow;
+    color: black;
+    transform: rotateY(180deg);
+    font-size: 40px;
+}*/
+
 footer{
     display: flex;
     justify-content: space-between;
     margin: 2rem;
     border-top: 1px solid black;
     padding-top: 2rem;
+}
+
+#skills{
+    margin-bottom: 5rem;
+}
+
+#skills h2{
+    text-align: center;
+    margin: 5rem;
+    font-size: 2rem;
+}
+
+#skills-container{
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+
+.skills-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 2rem;
+    margin: auto;
+}
+
+.skills-div p{
+    text-align: left;
+    align-self: center;
+    font-size: 1.5rem;
+}
+
+.skill-icon{
+    width: 100%;
+    max-width: 3rem;
+    height: auto;
+    justify-self: flex-end;
 }
