@@ -40,12 +40,7 @@ figure{
     position: relative;
 }
 
-figcaption{
-    text-align: center;
-}
-
 #profile-img{
-    height: auto;
     float: left;
     margin-right: 2rem;
     margin-bottom: 1rem;
@@ -163,4 +158,96 @@ footer{
     max-width: 3rem;
     height: auto;
     justify-self: flex-end;
+}
+
+@media only screen and (max-width:962px) {
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    .nav-link{
+        font-size: 1rem;
+    }
+
+    #profile-pic-div{
+        width: 100%;
+    }
+
+    #profile-img{
+        float:unset;
+        margin:auto;
+        display: block;
+    }
+
+    #about-text{
+        text-align: center;
+        margin-top: 5rem;
+    }
+
+    #about-text h2{
+        margin-bottom: 4rem;;
+    }
+
+    #projects-div{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:780px) {
+    #projects-div{
+        display: block;
+    }
+
+    .project-box{
+        margin: 3rem auto;
+        width: 60%;
+    }
+
+    #skills-container{
+        display: block;
+    }
+
+    .skills-div{
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width:729px) {
+    header{
+        display: block;
+        text-align: center;
+    }
+
+    #nav-list{
+        padding: 0;
+        margin-top: 2rem;
+    }
+
+    .nav-link{
+        padding: 0.5rem 2rem;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    #about-me{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:503px) {
+    .nav-link{
+        padding: 0.5rem 1rem;
+    }
+    .project-box{
+        margin: 3rem auto;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:385px) {
+    footer{
+        display: block;
+        text-align: center;
+    }
 }
